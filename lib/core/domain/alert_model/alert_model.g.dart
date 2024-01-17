@@ -1,0 +1,30 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'alert_model.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$AlertModelImpl _$$AlertModelImplFromJson(Map<String, dynamic> json) =>
+    _$AlertModelImpl(
+      message: json['message'] as String,
+      type: $enumDecode(_$AlertTypeEnumMap, json['type']),
+      code: json['code'] as int?,
+    );
+
+Map<String, dynamic> _$$AlertModelImplToJson(_$AlertModelImpl instance) =>
+    <String, dynamic>{
+      'message': instance.message,
+      'type': _$AlertTypeEnumMap[instance.type]!,
+      'code': instance.code,
+    };
+
+const _$AlertTypeEnumMap = {
+  AlertType.constructive: 'constructive',
+  AlertType.destructive: 'destructive',
+  AlertType.error: 'error',
+  AlertType.notification: 'notification',
+  AlertType.exception: 'exception',
+  AlertType.quiet: 'quiet',
+};
